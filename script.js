@@ -72,7 +72,8 @@ diceEl.classList.add('hidden');
 
 
 
-} else {
+} 
+else {
 switchPlayer();}
 }});
 
@@ -87,5 +88,7 @@ btnRules.addEventListener("click", function() {
   rules.classList.toggle("hid");
 });
 
-
-  
+document.onclick=function(clickevent){
+  if(clickevent.target.id !=='rules-btn'){
+    rules.classList.add("hid");
+  }};
